@@ -4,29 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link to your external CSS file -->
 </head>
 <body>
-    <div>
+    <div class="container">
         <h2>Login</h2>
-        <form>
-            <div>
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email">
+        <form action="#" method="post">
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
             </div>
-            <div>
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password">
+            <div class="form-group">
+                <input type="password" id="password" name="password" placeholder="Password" required>
             </div>
-            <div>
-                <input type="checkbox" id="remember" name="remember">
-                <label for="remember">Remember me</label>
-            </div>
-            <div>
-                <button type="submit">Login</button>
-                <a href="#">Forgot password?</a>
-            </div>
+            <button type="submit">Login</button>
         </form>
+        <p class="signup-link">Don't have an account? <a href="/Sign Up/index.html" target="_main4">Sign up</a></p>
     </div>
 </body>
 </html>
